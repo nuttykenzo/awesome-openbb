@@ -146,6 +146,16 @@ The hosted solutions aren't hosted by OpenBB and can be disabled by the author o
 <img width="600" src="https://github.com/user-attachments/assets/e6e31c67-781f-419b-91d4-e8d7a081b0ec" />
 
 
+---
+
+**0xArchive**: OpenBB provider for market data from Hyperliquid and Lighter, two onchain crypto exchanges: order books down to individual orders (L2, L3, L4, diffs and history), trades, candles, funding, open interest, liquidations, order flow, positions and wallets, across Hyperliquid perps, HIP-3, HIP-4, Spot, Lighter and Lighter on Robinhood Chain. Works with `obb.crypto.price.historical`, `obb.crypto.search` and the futures commands, and every command shows up as an OpenBB Workspace widget.
+- Open source: [github.com/0xArchiveIO/openbb-0xarchive](https://github.com/0xArchiveIO/openbb-0xarchive)
+- PyPI: [openbb-0xarchive](https://pypi.org/project/openbb-0xarchive/)
+- Install: `pip install openbb openbb-0xarchive`
+- OpenBB usage: `obb.oxarchive.orderbook.snapshot(symbol="BTC")` or `obb.crypto.price.historical("ETH", provider="oxarchive", venue="lighter")`
+- API required: Set `oxarchive_api_key` in OpenBB credentials, from [0xArchive](https://0xarchive.io)
+- Author: [0xArchiveIO](https://github.com/0xArchiveIO)
+
 ### Mock Data
 
 This section highlights mock apps built for learning and prototyping inside the Workspace.
